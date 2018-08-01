@@ -50,11 +50,11 @@ var deleteOrder = function() {
     })
 };
 
-var post = function() {
+var post = function(order) {
     $.ajax({
         type:'POST',
         url: "https://dc-coffeerun.herokuapp.com/api/coffeeorders",
-        data:{},
+        data:{order},
         success: function() {
             console.log('worked');
         },
