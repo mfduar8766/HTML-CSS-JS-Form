@@ -1,0 +1,105 @@
+DOM Node: This is the tag that you are looking up ie: ul.
+document.querySelector(#theID):returns the first Element within the document that matches the specified selector, or group of selectors. If no matches are found, null is returned.
+To change text on page use textContent = ''
+
+To add a class in the DOM use DOM node.classList.add('class-1')
+Variables inside for loops are global variabes
+
+Functions:
+    Closures
+    Scopes
+    Variables
+
+You can only see variabes that are inside a Function
+
+EX: Cant do this:
+    Function doSomething() {
+        doSomething2();
+    }
+
+    Function doS\2() {
+        var two = 2;
+    }
+
+Scope: Wher you can access the variablef from
+Undefined: Value has not been assigned
+
+
+var addNumber = function(num1,num2) {
+    var sum = num1+num2
+    return answer;
+}
+
+var doMath = function(operation) {
+    var answer = operation(5,5);
+    return answer;
+};
+doMath(addNumber);
+
+
+function abc() {return true}: 
+    Function decloration Reads the code then runs the function. This hoists the function to the top of the file.
+
+var newFunc = function() {};
+    This is a function expression. Runs and can be executed from top to bottom.
+
+To create global variable use window.variableName = ...;
+
+tyOf: safe way to check if a variabe exists or not.
+
+Closures: Creates a new empty scope inside a for loops
+
+(function() {
+    ...
+})(); 
+    'This will create a local scope for the variabes in the function. this means that the data will not be destroyed in every itiration of the loop. The information is saved and reused'
+
+async function: 
+    A function that runs imidiately, but it does not return right away. The function waits for the information to be recieved.
+-----------------------------------------------------------------------------
+var  ninjaninja = {  = { 
+    yellyell: : functionfunction((nn){ ){ 
+        returnreturn  nn >  > 00 ?  ? ninjaninja..yellyell((nn-1-1) + ) + "a""a" :  : "hiy""hiy"; ; 
+  }   } 
+}; }; 
+assertassert( ( ninjaninja..yellyell((44) == ) == "hiyaaaa""hiyaaaa", , "A single object isn't too bad, either.""A single object isn't too bad, either." );  ); 
+  
+varvar  samuraisamurai = {  = { yellyell: : ninjaninja..yellyell };  }; 
+varvar  ninjaninja =  = nullnull; ; 
+  
+trytry {  { 
+    samuraisamurai..yellyell((44); ); 
+} } catchcatch((ee){ ){ 
+    assertassert( ( falsefalse, , "Uh, this isn't good! Where'd ninja.yell go?""Uh, this isn't good! Where'd ninja.yell go?" );  ); 
+
+ 'Assert ninja.yell. This will pass because its already defined. Once we get to the second assert; it fails because we now set ninja as Null;therefore, there is no value inside it. Its empty.'   
+-----------------------------------------------------------------------------
+var ninja = { 
+  yell: function yell(n){ 
+    return n > 0 ? yell(n-1) + "a" : "hiy"; 
+  } 
+}; 
+assert( ninja.yell(4) == "hiyaaaa", "Works as we would expect it to!" ); 
+ 
+var samurai = { yell: ninja.yell }; 
+var ninja = {}; 
+assert( samurai.yell(4) == "hiyaaaa", "The method correctly calls itself." );
+
+'This means that the variable samuri will call the function yell from ninja. Even though ninja is reassigned an empty value; it was already called and the value from it will be returned as true in the assert.'
+-----------------------------------------------------------------------------
+Git Branches:
+    The most recent commit is the head commit
+    Split off the master Branches
+
+    Merge:
+        This is when you merge other branches with the Master
+
+    Create new branch:
+        git branch 'name' 
+
+    Change over to new branch  
+        git checkout 'new branch name'
+        To push code up for first time use: git push --set-upstream origin 'branch name'
+
+To leave Git diff hit 
+Two spaces is the norm

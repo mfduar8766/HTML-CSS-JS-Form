@@ -1,0 +1,30 @@
+The Header:
+    authority: The URL being asked for.
+    method: GET, POST, DELETE
+    path: /
+
+fetch('GET','URL');
+
+
+jquery
+$.ajax('https://dc-coffeerun.herokuapp.com/api/coffeeorders', {
+    success: function(data) {
+        console.log(data);
+    },
+    error: function() {
+        console.log('error');
+    }
+});
+
+
+to POST use method: 'POST', 
+
+$.ajax('https://dc-coffeerun.herokuapp.com/api/coffeeorders', {
+    method: 'POST',
+    data: {
+        emailAddress: 'john123@gmail.com',
+        typeOfCoffee: 'espreso'
+    }
+});
+
+Remove local storage and use ajax to post 

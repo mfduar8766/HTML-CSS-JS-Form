@@ -1,0 +1,16 @@
+<form action='' method='post'</form>
+    Method: Lets you specify the information from the form.
+
+Form Tags:
+    input: Must be wrapped in a form tag.
+        Attributes: Action, Methods, name, 
+        1. Data list: Allows for auto complete.
+        To grab the value of the form with JS use class name.value.
+        For check boxes use class.checked to see if the box is on or off.
+
+        Prevent button from submitting and reloading the page.
+        input of type submit will look for the nearest parent form and triggering the submit event on it.
+
+
+Git Pull 
+    

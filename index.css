@@ -1,0 +1,124 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+}
+
+.fill-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.name-input {
+    height: 2rem;
+}
+
+.fill-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.email-input {
+    height: 2rem;
+}
+
+.select {
+    padding: 1rem;
+}
+
+.radio {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-1 {
+    display: flex;
+    padding: 1rem;
+}
+
+.radio-2 {
+    display: flex;
+    padding: 1rem;
+}
+
+.radio-3 {
+    display: flex;
+    padding: 1rem;
+}
+
+
+.flavor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.flavor-input {
+    height: 2rem;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.submit-btn {
+    display: flex;
+    padding: 1rem;
+}
+
+.pending-orders {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: 1px solid black;
+    margin-top: 1rem;
+    height: 100%;
+}
+
+.display-list {
+    align-items: center;
+    padding: 0.5rem;
+    background: #ddd;
+    margin-right: 1rem;
+    width: 50%;
+    height: 100%;
+}
+
+.btn {
+    order: 4;
+}
+
+ .list {
+     padding: 0.5rem;
+     list-style: none;
+} 
